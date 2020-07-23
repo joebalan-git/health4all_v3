@@ -1,30 +1,4 @@
-https://1cb4a0fc15a04d542e70833e1affe66cb6f05f47056e4b4b:3af751a3c1cecb41e8d1285b3ef198d21178e1edb9981da8@api.in.exotel.com/v1/Accounts/yousee/Calls/connect
-
-
-https://yousee:3592600392cb16a0ce65d974e482cc2c8ad0014e@api.in.exotel.com/v1/Accounts/yousee/Calls/connect
-
-
-
-
-- Remove "Add Call Group" link
-- Add "Link Helpine Receivers"
-
-
-
-https://support.exotel.com/support/solutions/folders/92360
-
-    - Outbound Call to connect an Agent to a Customer
-    - How to send an automated SMS after an outbound call using API
-
-https://support.exotel.com/support/solutions/articles/3000096873-working-with-connect-applet-dynamic-url-
-
-
-
-
-
 # Health4All
-
-Contact On [gunaranjan@yousee.one]
 
 Softwares to be installed
     - WAMP / XAMPP Server
@@ -56,22 +30,3 @@ DB Migration,
 
 TODOs,
     - DB Migration needs to be automated --> https://www.youtube.com/watch?v=i07XXM37VFk
-
-References,
-    - Database Migrations
-        - https://codeinphp.github.io/post/database-migrations-in-codeigniter/
-    - 
-
-Joe's Task
-    1. Need to freeze patient profile completed fields in revisit for OP or IP. Already Filled value should not be allowed to be updated"
-    2. Add SPO2 in custom form feature
-    3. Follow-UP Module to be integrated from health4all_v2 repo to current repo. Install & discuss with Guna. Workflow for Followup for Referrals, Follow up to Appointments, Appointments to Visit"
-    4. All the fields if invalid should show the field border as red
-    5. Move search above the registration form & should be only one line with advanced filter toggle button which when clicked show all the extra search fields. Show fields in one line [H4A, Visit Type, IP/OP Number, Phone Number] & in More search [Year]
-    6. Retrieve previous prescription drug drop downs not selected.
-    7. Display note in the patient update form itself, about Mandatory requirement for Clinical or Discharge notes for Prescription and Mandatory requirement for Doctor to sign the Prescription. Show Alert message below prescription area with bell icon & left aligned. Message ""Medicine prescription is not permitted without Symptoms or Clinical Notes or Diagnosis being mentioned.
-    8. On keypress of clinical notes, show * after label of date field based on content of clinical notes. Show * for date field label if clinical notes is not empty or else remove star
-    9. Patient Update alert messages to be taken from the defaults table, instead of hard-coding it.
-    10. Center Align additional prescription elements
-    11. SPO2 to be added in print summary. Also, order the fields in print summary with displayed fields. Also, do not show empty field labels.
-    12. Clinical Note date picker not working in Firefox. Make repository of date pickers in application with dependency on browser and move to a uniform performing date picker resource. Joe will add new sheet with list of pages & date type. Guna will validate
