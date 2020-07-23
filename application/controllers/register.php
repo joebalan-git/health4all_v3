@@ -369,6 +369,33 @@ class Register extends CI_Controller {
 		else return false;
 	}
 	
+	// function follow_up_edit(){
+	// 	$id = $this->input->get('follow_up_id');
+	// 	// $this->load->model('register_model');
+	// 	// $data['data'] = $this->register_model->get_follow_up_report_id($id);
+	// 	$this->data['follow_ups'] = $this->register_model->get_follow_up_category();
+	// 	$this->data['follow_up_status'] = $this->register_model->get_follow_up_status();
+	// 	$this->data['follow_up_status_reason'] = $this->register_model->get_follow_up_status_reason();
+	// 	$this->data['clinical_speciality'] = $this->register_model->get_follow_up_speciality();
+	// 	$this->data['get_staff_selected_hosp'] = $this->register_model->get_staff_selected_hosp();
+
+	// 	$this->load->view('pages/follow_up_edit.php');
+
+	// }
+	function followup_edit(){
+		$id = $this->input->get('follow_up_id');
+		$data['data'] = $this->register_model->get_follow_up_category();
+
+		// $this->data['follow_ups'] = $this->register_model->get_follow_up_category();
+		// $this->data['follow_up_status'] = $this->register_model->get_follow_up_status();
+		// $this->data['follow_up_status_reason'] = $this->register_model->get_follow_up_status_reason();
+		// $this->data['clinical_speciality'] = $this->register_model->get_follow_up_speciality();
+		// $this->data['get_staff_selected_hosp'] = $this->register_model->get_staff_selected_hosp();
+
+		$this->load->view('pages/edituser.php',$data);
+
+	}
+	
 	function transport(){		
 		if($this->session->userdata('logged_in')){
 		$this->data['userdata']=$this->session->userdata('logged_in');
